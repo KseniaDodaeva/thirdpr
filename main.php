@@ -8,8 +8,6 @@
 <?php
 $pdo = new PDO ('mysql:dbname=firstbd;host=localhost:3306', 'root', 'root');
 $selectQuery = 'SELECT * FROM word';
-#$oneRow = $pdo->query($selectQuery)->fetch(PDO::FETCH_ASSOC);
-#$allRow = $pdo->query($selectQuery)->fetchAll(PDO::FETCH_ASSOC);
 $insertQueryWords = 'INSERT INTO 
 word(text_id, word, count) 
 VALUES (?, ?, ?)';
